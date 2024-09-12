@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        body {
+            margin: 0;
+           height: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #6fbde4;
+        }
+
+        .task3 {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: auto 1fr auto;
+            gap: 10px;
+            transform: rotate(45deg);
+           
+        }
+
+        .head{
+            grid-column: 2 / span 3;
+            background-color: #333;
+            color: white;
+            padding: 100px;
+        
+        }
+
+        .left {
+            grid-row: 1 / span 3;
+            grid-column: 1 / span 1;
+            background-color: #333;
+            padding: 20px;
+            color: white;
+        }
+
+        .main {
+            grid-column: 2 / span 1;
+            background-color: #333;
+            padding: 50px;
+            color: white;
+        }
+
+       .right {
+            grid-row: 2 / span 3;
+            grid-column: 3 / span 1;
+            background-color: #333;
+            padding: 20px;
+            color: white;
+        }
+
+        .foot{
+            grid-column: 1 / span 2;
+            background-color: #333;
+            color: white;
+            padding: 100px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="task3">
+        <header class="head">1</header>
+        <aside class="left">2</aside>
+        <main class="main">3</main>
+        <aside class="right">4</aside>
+        <footer class="foot">5</footer>
+    </div>
+</body>
+</html>
